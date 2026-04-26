@@ -4,54 +4,51 @@ Your friends are nearby. They just don't know it yet.
 
 `mutualism` is a SwiftUI iOS app that whispers to second-degree connections: *"hey, I'm around, want to hang?"* — without doxxing your exact coordinates to the entire internet. Think: ambient presence, gentle nudges, real-life serendipity. Less doomscroll, more "wait you're in this coffee shop too??"
 
-## What you'll need 🧰
+## Requirements
 
-- Xcode 15+ (the app does not run on vibes alone, sadly)
-- iOS 17+ on the simulator or a real device
+- Xcode 15+
+- iOS 17+ (simulator or device)
 - Swift 5.9+
-- A heart open to spontaneous coffee meetups
 
-## Getting it running ☕
+## Getting started
 
-The path of least resistance:
+Open the project in Xcode and run:
 
 ```bash
 open mutualism.xcodeproj
 ```
 
-Press the big play button. Done. Touch grass.
-
-If you're a terminal goblin:
+Or build from the command line:
 
 ```bash
 xcodebuild -project mutualism.xcodeproj -scheme mutualism build
 ```
 
-## Other useful incantations 🪄
+## Common commands
 
 ```bash
-# Run the tests (they pass! probably!)
+# Run tests
 xcodebuild test -project mutualism.xcodeproj -scheme mutualism \
   -destination 'platform=iOS Simulator,name=iPhone 15'
 
-# When in doubt, clean
+# Clean build folder
 xcodebuild clean -project mutualism.xcodeproj -scheme mutualism
 ```
 
-## Where things live 🏡
+## Project structure
 
 ```
 mutualism/
-├── mutualismApp.swift          The front door. Wipe your shoes.
-├── ContentView.swift           The living room — map, feed, status toggle
-├── Persistence.swift           Core Data's tidy little pantry
-├── DesignSystem.swift          The mood board (colors, type, spacing)
-├── Components/                 Reusable lego bricks
-├── Views/                      The actual screens (Onboarding, Profile, Settings)
-├── ViewModels/                 The brains 🧠 (MVVM, baby)
-├── Services/                   Mocked APIs + telemetry — don't trust their stories
-├── Assets.xcassets/            Pretty pictures
-└── mutualism.xcdatamodeld/     Core Data's blueprint
+├── mutualismApp.swift          App entry point
+├── ContentView.swift           Main view — map, feed, status toggle
+├── Persistence.swift           Core Data stack
+├── DesignSystem.swift          Design tokens (colors, type, spacing)
+├── Components/                 Reusable UI components
+├── Views/                      Screens (Onboarding, Profile, Settings)
+├── ViewModels/                 MVVM view models
+├── Services/                   Mocked APIs and telemetry
+├── Assets.xcassets/            Image assets
+└── mutualism.xcdatamodeld/     Core Data model
 ```
 
 ## How it's wired up 🔌
@@ -87,10 +84,10 @@ The aesthetic is "warm, calm, slightly chai-coded." Tokens live in `DesignSystem
 
 Custom fonts are in `Fonts/` and registered via `Info.plist`. Treat them gently.
 
-## Tests 🧪
+## Tests
 
 - `mutualismTests/` — unit tests (XCTest)
-- `mutualismUITests/` — UI tests (XCUITest, slightly fussier)
+- `mutualismUITests/` — UI tests (XCUITest)
 
 ## House rules 🏠
 
