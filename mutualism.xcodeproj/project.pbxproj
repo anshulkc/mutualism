@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF17108E2E92CD6C00C878DF /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF17108C2E92CD6C00C878DF /* Nunito-Regular.ttf */; };
+		AF17108F2E92CD6C00C878DF /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF17108B2E92CD6C00C878DF /* Nunito-Medium.ttf */; };
+		AF1710902E92CD6C00C878DF /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF17108D2E92CD6C00C878DF /* Nunito-SemiBold.ttf */; };
+		AF17109A2E92CFEA00C878DF /* Fraunces72pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1710982E92CFEA00C878DF /* Fraunces72pt-Regular.ttf */; };
+		AF17109B2E92CFEA00C878DF /* Fraunces72pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1710992E92CFEA00C878DF /* Fraunces72pt-SemiBold.ttf */; };
+		AF17109C2E92CFEA00C878DF /* Fraunces72pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF1710972E92CFEA00C878DF /* Fraunces72pt-Bold.ttf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AF1710432E8F1B1000C878DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +36,46 @@
 		AF17102D2E8F1B0E00C878DF /* mutualism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mutualism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1710422E8F1B1000C878DF /* mutualismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mutualismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF17104C2E8F1B1000C878DF /* mutualismUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mutualismUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF17108B2E92CD6C00C878DF /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		AF17108C2E92CD6C00C878DF /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		AF17108D2E92CD6C00C878DF /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		AF1710972E92CFEA00C878DF /* Fraunces72pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fraunces72pt-Bold.ttf"; sourceTree = "<group>"; };
+		AF1710982E92CFEA00C878DF /* Fraunces72pt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fraunces72pt-Regular.ttf"; sourceTree = "<group>"; };
+		AF1710992E92CFEA00C878DF /* Fraunces72pt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fraunces72pt-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AF1710842E921D3D00C878DF /* Exceptions for "mutualism" folder in "mutualism" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AF17102C2E8F1B0E00C878DF /* mutualism */;
+		};
+		AF1710AE2E92E05C00C878DF /* Exceptions for "mutualism" folder in "mutualismTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewModels/ContentViewModel.swift,
+			);
+			target = AF1710412E8F1B1000C878DF /* mutualismTests */;
+		};
+		AF1710AF2E92E05C00C878DF /* Exceptions for "mutualism" folder in "mutualismUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewModels/ContentViewModel.swift,
+			);
+			target = AF17104B2E8F1B1000C878DF /* mutualismUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AF17102F2E8F1B0E00C878DF /* mutualism */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AF1710842E921D3D00C878DF /* Exceptions for "mutualism" folder in "mutualism" target */,
+				AF1710AE2E92E05C00C878DF /* Exceptions for "mutualism" folder in "mutualismTests" target */,
+				AF1710AF2E92E05C00C878DF /* Exceptions for "mutualism" folder in "mutualismUITests" target */,
+			);
 			path = mutualism;
 			sourceTree = "<group>";
 		};
@@ -75,6 +119,7 @@
 		AF1710242E8F1B0E00C878DF = {
 			isa = PBXGroup;
 			children = (
+				AF17107A2E921C0500C878DF /* Fonts */,
 				AF17102F2E8F1B0E00C878DF /* mutualism */,
 				AF1710452E8F1B1000C878DF /* mutualismTests */,
 				AF17104F2E8F1B1000C878DF /* mutualismUITests */,
@@ -90,6 +135,19 @@
 				AF17104C2E8F1B1000C878DF /* mutualismUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AF17107A2E921C0500C878DF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF17108B2E92CD6C00C878DF /* Nunito-Medium.ttf */,
+				AF17108C2E92CD6C00C878DF /* Nunito-Regular.ttf */,
+				AF17108D2E92CD6C00C878DF /* Nunito-SemiBold.ttf */,
+				AF1710972E92CFEA00C878DF /* Fraunces72pt-Bold.ttf */,
+				AF1710982E92CFEA00C878DF /* Fraunces72pt-Regular.ttf */,
+				AF1710992E92CFEA00C878DF /* Fraunces72pt-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +270,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF17108E2E92CD6C00C878DF /* Nunito-Regular.ttf in Resources */,
+				AF17108F2E92CD6C00C878DF /* Nunito-Medium.ttf in Resources */,
+				AF1710902E92CD6C00C878DF /* Nunito-SemiBold.ttf in Resources */,
+				AF17109A2E92CFEA00C878DF /* Fraunces72pt-Regular.ttf in Resources */,
+				AF17109B2E92CFEA00C878DF /* Fraunces72pt-SemiBold.ttf in Resources */,
+				AF17109C2E92CFEA00C878DF /* Fraunces72pt-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +463,8 @@
 				DEVELOPMENT_TEAM = AR6537V5RM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mutualism/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +494,8 @@
 				DEVELOPMENT_TEAM = AR6537V5RM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mutualism/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

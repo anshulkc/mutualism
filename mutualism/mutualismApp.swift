@@ -10,11 +10,23 @@ import SwiftUI
 @main
 struct mutualismApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject private var onboardingManager = OnboardingManager()
+
+    init() {
+        // Register custom fonts on app launch
+        AppTypography.registerFonts()
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            if onboardingManager.hasCompletedOnboarding {
+                ContentView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(onboardingManager)
+            } else {
+                OnboardingView()
+                    .environmentObject(onboardingManager)
+            }
         }
     }
 }
