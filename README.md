@@ -1,8 +1,38 @@
+<div align="center">
+
 # mutualism 🪴
 
-Your friends are nearby. They just don't know it yet.
+### *Your friends are nearby. They just don't know it yet.*
 
-`mutualism` is a SwiftUI iOS app that whispers to second-degree connections: *"hey, I'm around, want to hang?"* — without doxxing your exact coordinates to the entire internet. Think: ambient presence, gentle nudges, real-life serendipity. Less doomscroll, more "wait you're in this coffee shop too??"
+<sub>A SwiftUI iOS app that whispers to second-degree connections: *"hey, I'm around, want to hang?"* — without doxxing your exact coordinates to the entire internet. Think: ambient presence, gentle nudges, real-life serendipity. Less doomscroll, more "wait you're in this coffee shop too??"</sub>
+
+<br />
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/ad4e00b7-f05f-4676-8b66-96b6d951a58d" width="220" /></td>
+    <td><img src="https://github.com/user-attachments/assets/97fb50ed-80ab-4c94-8b8f-0eb9bf1c228b" width="220" /></td>
+    <td><img src="https://github.com/user-attachments/assets/ad8d9a9a-f33e-40fd-aecc-b2e8b301278c" width="220" /></td>
+    <td><img src="https://github.com/user-attachments/assets/d6c6aa58-7790-48f9-8cdf-857dabc63e2a" width="220" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Onboarding</sub></td>
+    <td align="center"><sub>Map</sub></td>
+    <td align="center"><sub>Serendipity</sub></td>
+    <td align="center"><sub>Profile</sub></td>
+  </tr>
+</table>
+
+<br />
+
+![Platform](https://img.shields.io/badge/platform-iOS%2017+-black?style=flat-square)
+![Swift](https://img.shields.io/badge/Swift-5.9-orange?style=flat-square)
+![Xcode](https://img.shields.io/badge/Xcode-15+-blue?style=flat-square)
+![Status](https://img.shields.io/badge/status-in%20development-green?style=flat-square)
+
+</div>
+
+---
 
 ## Requirements
 
@@ -101,4 +131,4 @@ Cribbed from `.cursorrules`, the family handbook:
 
 ---
 
-*Made with care, mild chaos, and a lot of tea.* 🍵
+*UI inspired by 222* 🍵
