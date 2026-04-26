@@ -17,8 +17,8 @@
   </tr>
   <tr>
     <td align="center"><sub>Onboarding</sub></td>
-    <td align="center"><sub>Map</sub></td>
-    <td align="center"><sub>Serendipity</sub></td>
+    <td align="center"><sub>Home Page</sub></td>
+    <td align="center"><sub>Panel</sub></td>
     <td align="center"><sub>Profile</sub></td>
   </tr>
 </table>
